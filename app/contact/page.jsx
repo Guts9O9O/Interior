@@ -1,24 +1,13 @@
-// export default function Contact() {
-//     return (
-//         <div>
-//             <h1>Contact Us</h1>
-//             <p>Phone: 555-555-5555</p>
-//             <p>Email:
-//             </p>
-//         </div>
-//     );
-// }
-
 "use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image'; // if you're using Next.js for handling images
+import React, { useState } from "react";
+import Image from "next/image"; // if you're using Next.js for handling images
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -30,12 +19,12 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for contacting us!');
+    console.log("Form submitted:", formData);
+    alert("Thank you for contacting us!");
     setFormData({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     });
   };
 
@@ -54,7 +43,7 @@ const ContactUs = () => {
       <div className="contact-right">
         <h1>Contact Us</h1>
         <p>
-          Were here to assist you. Please fill out the form, and we'll get back to you as soon as possible.
+          We&#39;re here to assist you. Please fill out the form, and we&#39;ll get back to you as soon as possible.
         </p>
         <form onSubmit={handleSubmit}>
           <label>Name</label>
@@ -66,7 +55,7 @@ const ContactUs = () => {
             required
             placeholder="Enter your name"
           />
-          
+
           <label>Email</label>
           <input
             type="email"
